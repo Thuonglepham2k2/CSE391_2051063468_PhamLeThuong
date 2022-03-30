@@ -226,3 +226,33 @@ li {
   line-height: 28px;
 }
 
+#row .skills .skills-bar {
+  position: relative;
+  background: #1c1d24;
+}
+ 
+#row .skills .skills-bar .skills-bar-in {
+  width: 80px;
+  height: 10px;
+  position: relative;
+  transition: all 0.55s ease;
+} 
+
+#row .skills .skills-bar .skills-bar-in span {
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+  background: #1c1d24;
+  padding: 2px 6px;
+  color: #fff;
+}
+
+#row .skills .skills-bar .skills-bar-in span:after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  right: 0;
+  border-left: 7px solid transparent;
+  border-top: 8px solid #1c1d24;
+}
+
