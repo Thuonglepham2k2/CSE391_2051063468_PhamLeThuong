@@ -139,5 +139,79 @@ section .title::after{
         width: 100%;
     }
 } 
+/* row */
+#row {
+  font-family:'Poppins', sans-serif ;
 
+  text-align: center;
+  border: 1px solid #1c1d24;
+  padding: 80px 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #1c1d24;
+  
+ 
+} 
 
+#row .sm-title {
+  width: 25px;
+  height: 3px;
+  background-color: #dc965a;
+  margin: 0px;
+}
+#row {
+  display: flex;
+  justify-content: center;
+}
+#row .col-lg-4_my-3 {
+  
+  text-align: left;
+ 
+  padding: 50px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  
+}
+#row .col-lg-4_my-3 h4 {
+  font-size: 27px;
+  
+}
+#row .col-lg-4_my-3 .aducation-box_them-bg {
+  width: 350px;
+  height: 423.2px;
+  background-color:#5e6472;
+  margin: 30px 0;
+  color: #fff;
+  padding: 0 20px;
+
+}
+#row span {
+  font-size: 14px;
+  padding: 2px 15px;
+  line-height: 12px;
+  background-color: black;
+
+}
+#row ul,
+li {
+  list-style: none;
+}
+#row ul {
+  padding: 20px 0;
+  border-bottom: dotted 1px white;
+}
+#row h5 {
+  padding: 10px 0px;
+  font-size: 18px;
+  line-height: 21px;
+}
+#row h6 {
+  padding: 10px 0px;
+  font-size: 18px;
+  line-height: 5px;
+}
+#row p {
+  font-size: 16px;
+  line-height: 27px;
+}
