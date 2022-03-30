@@ -256,3 +256,13 @@ li {
   border-top: 8px solid #1c1d24;
 }
 
+#row .skills:not(:first-child) {
+  margin-top: 25px;
+} 
+.aducation-box_them-bg .skills .skills-bar .skills-bar-in {
+ padding-top: 10px;
+ padding-bottom: 10px;
+}
+.skills-bar-in{
+    height: 5px;
+}
