@@ -266,3 +266,143 @@ li {
 .skills-bar-in{
     height: 5px;
 }
+ /* portfolio */
+ #work {
+  font-family:'Poppins', sans-serif ;
+   
+  text-align: center;
+  border: 1px solid #1c1d24;
+  padding: 80px 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #878e99;
+    
+}
+.a{
+    display: flex;
+    justify-content: left;
+    padding-left: 60px;
+   
+   }
+  #work .col-lg-7{
+    margin-top: 100px;
+  }
+  .portfolio-menu ul {
+    display: inline-flex;
+    list-style: none;
+  }
+.portfolio-menu ul li{
+    font-size: 1.6rem;
+    margin:0 15px;
+    padding: 5px 0;
+    color:#1c1d24;
+    position: relative;
+    
+  }
+ .col-sm-6{
+    width: 385px;
+    height:600px ;
+ 
+    text-align: center;
+    transition: all 0.3s ease;
+    margin-top: 24px;
+    text-align: left;
+ }
+ .col-lg-7{
+   margin-top: 100px;
+ }
+ .col-lg-7 h3{
+  font-size: 45px;
+  color: #1c1d24;
+  font-weight: 800;
+  position: relative;
+  margin: 0 0 15px;
+  padding: 0 0 15px;
+ }
+ .titles::before{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 50px;
+  height: 3px;
+  background: #dc965a;
+  transform: translateX(-50%);
+}
+.portfolio-menu{
+  margin-top: 50px;
+ 
+}
+ .portfolio-img{
+  position: relative;
+  
+  transition: all 0.3s ease;
+ 
+  padding: 0 20px; 
+  margin: 0px 19px;
+  background-color: #111;
+  /* border: 1px solid  rgb(34, 34, 34); */
+}
+ .portfolio-img img {
+  width: 450px;
+  height: 500px; 
+  padding: 20px 10px;
+}
+.a:hover h4{
+  color:#dc965a;
+  
+}
+.gallery-link:hover img{
+  background-color: white;
+  transform: scale(0.5,0.5);;
+}
+/* teams section styling  */
+#teams {
+    font-family:'Poppins', sans-serif ;
+   
+    text-align: center;
+    border: 1px solid #1c1d24;
+    padding: 70px 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #1c1d24;
+  
+}
+.carousel{
+  display: flex;
+  justify-content: left;
+  padding-left: 35px;
+  transition: all 0.3s ease;
+
+}
+.teams .carousel .cards{
+  background:white;
+    border-radius: 6px;
+    margin: 5px 20px;
+    width: 360px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.teams .carousel .cards:hover{
+  background: crimson;
+}
+.teams .carousel .cards:hover .boxs{
+  transform: scale(1.05);
+}
+.teams .carousel .cards .texts {
+  font-size: 20px;
+  font-weight: 20;
+  margin: 10px 0 7px 0;
+}
+.teams .carousel .cards img{
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid crimson;
+  transition: all 0.3s ease;
+}
+.teams .carousel .cards:hover img{
+  border-color: #fff;
+}
