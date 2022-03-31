@@ -354,7 +354,7 @@ li {
 }
 .gallery-link:hover img{
   background-color: white;
-  transform: scale(0.5,0.5);;
+  transform: scale(0.5,0.5);
 }
 /* teams section styling  */
 #teams {
@@ -405,4 +405,25 @@ li {
 }
 .teams .carousel .cards:hover img{
   border-color: #fff;
+}
+.owl-dots{
+  text-align: center;
+  margin-top: 20px;
+}
+.owl-dot{
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  outline: none!important;
+  border-radius: 50%;
+  border: 2px solid #ff9900!important;
+  transition: all 0.3s ease;
+}
+.owl-dot.active{
+  width: 35px;
+  border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+  background: #ff9900!important;
 }
