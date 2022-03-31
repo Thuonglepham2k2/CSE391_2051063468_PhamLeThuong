@@ -201,22 +201,27 @@ section .title::after{
 .contact .right form .textarea textarea{
     height: 100%;
     width: 80%;
-    border: 1px solid lightgrey;
+    border: 1px none lightgrey;
     border-radius: 6px;
     outline: none;
     padding: 0 15px;
     font-size: 17px;
     font-family: 'Poppins', sans-serif;
     transition: all 0.3s ease;
+    background-color: rgb(19, 15, 44);
+    color:#f1f1f1;
+   
 }
 .contact .right form .field input:focus,
 .contact .right form .textarea textarea:focus{
-    border-color: #b3b3b3;
+    border: 2px none #ff9900;
 }
 .contact .right form .textarea textarea{
   padding-top: 10px;
   resize: none;
   color:#f1f1f1;
+  border: 2px none #ff9900;
+  background-color: rgb(19, 15, 44);
 }
 .contact .right form .button-area{
   display: flex;
@@ -240,4 +245,37 @@ section .title::after{
 .right form .button-area button:hover{
   color: #ff9900;
   background: none;
+}/* responsive media query start */
+@media (max-width: 1104px) {
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact .right form .fields{
+        flex-direction: column;
+    }
+    .contact .right form .name,
+    .contact .right form .email{
+        margin: 0;
+    }
+    .right form .error-box{
+       width: 150px;
+    }
+    .scroll-up-btn{
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
+    }
 }
