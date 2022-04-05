@@ -288,10 +288,17 @@ section .title::after{
 .teams .title::before{
     background: #fff;
 }
-.services .title::after,
+.services .title::after::after,
 .teams .title::after{
     background: #111;
-    content: "what i provide";
+    content:;
+    font-size: 10%;
+}
+.services p{
+    align-items: right;
+    margin-bottom: 45px;
+    width: 60%;
+    margin-left: 250px;
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -301,9 +308,11 @@ section .title::after{
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
+    display: flex;
+    margin-top:20px;
 }
 .services .serv-content .card:hover{
-    border: 6px solid #ff9900;
+    border: 2px solid #ff9900;
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
@@ -311,6 +320,7 @@ section .title::after{
 .services .serv-content .card:hover .box{
     transform: scale(1.05);
 }
+
 .services .serv-content .card i{
     font-size: 25px;
     color: #ff9900;
@@ -324,38 +334,121 @@ section .title::after{
     font-weight: 500;
     margin: 10px 0 7px 0;
     color: #888;
+   
+}
+.services .serv-content .card p{
+    font-size: 15px;
+    font-weight: 800;
+    margin: 10px 0 7px 0;
+    color: #888;
+    align-items: right;
+    
 }
 .services .serv-content .card .text1{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 500;
     margin: 10px 0 7px 0;
     color:#fff;
 }
-.services .serv-content .card p{
+.services .serv-content .card .text{
     font-size: 15px;
     font-weight: 500;
     margin: 10px 0 7px 0;
     color:#888;
 }
 
+.services .serv-content .card .text3{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    color:#888;
+    
+}
+.services .serv-content .card .text4{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    color:#888;
+   
+}
+.services .serv-content .card .text5{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    color:#888;
+    
+}
+.services .serv-content .card .text6{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    color:#888;
+}
+.services .serv-content .card  .bars{
+    margin-bottom:20px;
+}
+.services .serv-content .card .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.services .serv-content .card  span{
+    font-weight: 800;
+    font-size: 18px;
+}
+.services .serv-content .card .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.services .serv-content .card .line::before{
+    content: "" ;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 30;
+    top: 0;
+    background: #ff9900;
+}
+
+.services .serv-content .card  .html::before{
+    width: 90%;
+}
+.services .serv-content .card  .css::before{
+    width: 60%;
+}
+.services .serv-content .card .js::before{
+    width: 80%;
+}
+.services .serv-content .card.php::before{
+    width: 50%;
+}
+.services .serv-content .card .mysql::before{
+    width: 70%;
+}
+
+
+
 
 /* skills section styling */
 
-.skills .title::after{
+.protfolio .title::after{
     content: "what i know";
 }
-.skills .skills-content .column{
+.protfolio .protfolio-content .column{
     width: calc(50% - 30px);
 }
-.skills .skills-content .left .text{
+.protfolio .protfolio-content .left .text{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.skills .skills-content .left p{
+.protfolio .protfolio-content .left p{
     text-align: justify;
 }
-.skills .skills-content .left a{
+.protfolio .protfolio-content .left a{
     display: inline-block;
     background: #ff9900;
     color: #fff;
@@ -367,30 +460,30 @@ section .title::after{
     border: 2px solid #ff9900;
     transition: all 0.3s ease;
 }
-.skills .skills-content .left a:hover{
+.protfolio .protfolio-content.left a:hover{
     color: #ff9900;
     background: none;
 }
-.skills .skills-content .right .bars{
+.protfolio .protfolio-content .right .bars{
     margin-bottom: 15px;
 }
-.skills .skills-content .right .info{
+.protfolio .protfolio-content .right .info{
     display: flex;
     margin-bottom: 5px;
     align-items: center;
     justify-content: space-between;
 }
-.skills .skills-content .right span{
+.protfolio .protfolio-content .right span{
     font-weight: 500;
     font-size: 18px;
 }
-.skills .skills-content .right .line{
+.protfolio .protfolio-content .right .line{
     height: 5px;
     width: 100%;
     background: lightgrey;
     position: relative;
 }
-.skills .skills-content .right .line::before{
+.protfolio .protfolio-content .right .line::before{
     content: "";
     position: absolute;
     height: 100%;
@@ -398,19 +491,19 @@ section .title::after{
     top: 0;
     background: #ff9900;
 }
-.skills-content .right .html::before{
+.protfolio-content .right .html::before{
     width: 90%;
 }
-.skills-content .right .css::before{
+.protfolio-content .right .css::before{
     width: 60%;
 }
-.skills-content .right .js::before{
+.protfolio-content .right .js::before{
     width: 80%;
 }
-.skills-content .right .php::before{
+.protfolio-content .right .php::before{
     width: 50%;
 }
-.skills-content .right .mysql::before{
+.protfolio-content .right .mysql::before{
     width: 70%;
 }
 
