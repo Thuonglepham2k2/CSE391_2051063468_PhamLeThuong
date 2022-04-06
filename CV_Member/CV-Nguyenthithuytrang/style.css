@@ -492,9 +492,7 @@ section .title::after{
 
 .a {
   display: flex;
-  display: flex;
    flex-wrap: wrap;
-    flex-direction: row;
   
   padding-left: 20px;
 
@@ -506,8 +504,8 @@ section .title::after{
 
 
 .col-sm-6 {
-    width: 385px;
-    height: 600px;
+    width: 300px;
+    height: 400px;
     float: inline-end;
     text-align: center;
     transition: all 0.3s ease;
