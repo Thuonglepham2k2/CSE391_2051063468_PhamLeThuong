@@ -1,0 +1,77 @@
+/* services section styling */
+.services, .teams{
+    color:#fff;
+    background: #111;
+}
+.services .title::before,
+.teams .title::before{
+    background: #fff;
+}
+.services .title::after::after,
+.teams .title::after{
+    background: #111;
+    content:;
+    font-size: 10%;
+}
+.services p{
+    align-items: right;
+    margin-bottom: 45px;
+    width: 60%;
+    margin-left: 250px;
+}
+.services .serv-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align:left;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    margin-top:20px;
+}
+.services .serv-content .card:hover{
+    border: 2px solid #ff9900;
+}
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+
+.services .serv-content .card i{
+    font-size: 25px;
+    color: #ff9900;
+    transition: color 0.3s ease;
+}
+.services .serv-content .card:hover i{
+    color: #fff;
+}
+.services .serv-content .card .text{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    color: #888;
+   
+}
+.services .serv-content .card p{
+    font-size: 15px;
+    font-weight: 800;
+    margin: 10px 0 7px 0;
+    color: #888;
+    align-items: right;
+    
+}
+.services .serv-content .card .text1{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    color:#fff;
+}
+.services .serv-content .card .text{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    color:#888;
+}
