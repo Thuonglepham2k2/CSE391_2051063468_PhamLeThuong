@@ -356,120 +356,98 @@ section .title::after{
     margin: 10px 0 7px 0;
     color:#888;
 }
-
-
-
-
-
-/* services section styling */
-.services, .teams{
-    color:#fff;
-    background: #111;
-}
-
-.services .serv-content .card1{
-    width: calc(33% - 20px);
-    background: #222;
-    text-align: center;
-    border-radius: 6px;
-    padding: 50px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.services .serv-content .card1:hover{
-    background: #ff9900;
-}
-.services .serv-content .card1.box{
-    transition: all 0.3s ease;
-}
-.services .serv-content .card1:hover .box{
-    transform: scale(1.05);
-}
-.services .serv-content .card1 i{
-    font-size: 50px;
-    color: #ff9900;
-    transition: color 0.3s ease;
-}
-.services .serv-content .card1:hover i{
-    color: #fff;
-}
-.services .serv-content .card1 .text{
-    font-size: 15px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-    color:#888;
-    
-}
-.services .serv-content .card1 .text3{
-    font-size: 15px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-    color:#888;
-    
-}
-.services .serv-content .card1 .text4{
-    font-size: 15px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-    color:#888;
-   
-}
-.services .serv-content .card1 .text5{
-    font-size: 15px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-    color:#888;
-    
-}
-.services .serv-content .card .text6{
-    font-size: 15px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-    color:#888;
-}
-.services .serv-content .card1  .bars{
-    margin-bottom:20px;
-}
-.services .serv-content .card1 .info{
-    display: flex;
-    margin-bottom: 5px;
-    align-items: center;
-    justify-content: space-between;
-}
-.services .serv-content .card1  span{
-    font-weight: 800;
+  
+.services .serv-content .card span {
+    font-size: 14px;
+    padding: 2px 15px;
+    line-height: 12px;
+    background-color: black;
+  
+  }
+  
+  .services .serv-content .card ul,
+  li {
+    list-style: none;
+  }
+  
+  .services .serv-content .card  ul {
+    padding: 20px 0;
+    border-bottom: dotted 1px white;
+  }
+  
+  .services .serv-content .card h5 {
+    padding: 10px 0px;
     font-size: 18px;
-}
-.services .serv-content .card1 .line{
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
+    line-height: 21px;
+  }
+  
+  .services .serv-content .card h6 {
+    padding: 10px 0px;
+    font-size: 18px;
+    line-height: 5px;
+  }
+  
+  .services .serv-content .card  p {
+    font-size: 16px;
+    line-height: 27px;
+  }
+  
+  /* skills */
+  .services .serv-content .card .skills {
+    padding-top: 10px;
+  }
+  
+  .services .serv-content .card.skills h6 {
+    font-size: 1.2rem;
+    margin: 0 0 8px;
+    color: #1c1d24;
+    line-height: 28px;
+  }
+  
+  .services .serv-content .card .skills .skills-bar {
     position: relative;
-}
-.services .serv-content .card1 .line::before{
-    content: "" ;
+    background: #1c1d24;
+  }
+  
+  .services .serv-content .card .skills .skills-bar .skills-bar-in {
+    width: 80px;
+    height: 10px;
+    position: relative;
+    transition: all 0.55s ease;
+  }
+  
+  .services .serv-content .card .skills .skills-bar .skills-bar-in span {
     position: absolute;
-    height: 100%;
-    top: 0;
-    background: #ff9900;
-}
-
-.services .serv-content .card1  .html::before{
-    width: 90%;
-}
-.services .serv-content .card1  .css::before{
-    width: 60%;
-}
-.services .serv-content .card1 .js::before{
-    width: 80%;
-}
-.services .serv-content .card1.php::before{
-    width: 50%;
-}
-.services .serv-content .card1 .mysql::before{
-    width: 70%;
-}
-
+    right: 0;
+    bottom: -20px;
+    background: #1c1d24;
+    padding: 2px 6px;
+    color: #fff;
+  }
+  
+  .services .serv-content .card .skills .skills-bar .skills-bar-in span:after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    right: 0;
+    border-left: 7px solid transparent;
+    border-top: 70px solid #1c1d24;
+    right: 80px;
+  }
+  
+  .services .serv-content .card .skills:not(:first-child) {
+    margin-top: 25px;
+  }
+  
+  .services .serv-content .card.skills .skills-bar .skills-bar-in {
+    padding-top: 10px;
+    padding-bottom: px;
+  }
+  
+  .skills-bar-in {
+    height: 5px;
+  }
+  
 
 /* portfolio */
 .protfolio{
