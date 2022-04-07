@@ -363,90 +363,147 @@ section .title::after{
   
   }
   
-  .services .serv-content .card ul,
+ /* row */
+#row {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    border: 1px solid #1c1d24;
+    padding: 80px 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #1c1d24;
+  
+  
+  }
+  
+  #row .sm-title {
+    width: 25px;
+    height: 3px;
+    background-color: #dc965a;
+    margin: 0px;
+  }
+  
+  #row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  #row .col-lg-4_my-3 {
+  
+    text-align: left;
+  
+    padding: 50px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+  
+  }
+  
+  #row .col-lg-4_my-3 h4 {
+    font-size: 27px;
+  
+  }
+  
+  #row .col-lg-4_my-3 .aducation-box_them-bg {
+    width: 350px;
+    height: 423.2px;
+    background-color: #5e6472;
+    margin: 30px 0;
+    color: #fff;
+    padding: 0 20px;
+  
+  }
+  
+  #row span {
+    font-size: 14px;
+    padding: 2px 15px;
+    line-height: 12px;
+    background-color: black;
+  
+  }
+  
+  #row ul,
   li {
     list-style: none;
   }
   
-  .services .serv-content .card  ul {
+  #row ul {
     padding: 20px 0;
     border-bottom: dotted 1px white;
   }
   
-  .services .serv-content .card h5 {
+  #row h5 {
     padding: 10px 0px;
     font-size: 18px;
     line-height: 21px;
   }
   
-  .services .serv-content .card h6 {
+  #row h6 {
     padding: 10px 0px;
     font-size: 18px;
     line-height: 5px;
   }
   
-  .services .serv-content .card  p {
+  #row p {
     font-size: 16px;
     line-height: 27px;
   }
   
   /* skills */
-  .services .serv-content .card .skills {
+  #row .skills {
     padding-top: 10px;
   }
   
-  .services .serv-content .card.skills h6 {
+  #row.skills h6 {
     font-size: 1.2rem;
     margin: 0 0 8px;
     color: #1c1d24;
     line-height: 28px;
   }
   
-  .services .serv-content .card .skills .skills-bar {
+  #row .skills .skills-bar {
     position: relative;
     background: #1c1d24;
   }
   
-  .services .serv-content .card .skills .skills-bar .skills-bar-in {
+  #row .skills .skills-bar .skills-bar-in {
     width: 80px;
     height: 10px;
     position: relative;
     transition: all 0.55s ease;
   }
   
-  .services .serv-content .card .skills .skills-bar .skills-bar-in span {
+  #row .skills .skills-bar .skills-bar-in span {
     position: absolute;
     right: 0;
-    bottom: -20px;
+    bottom: 15px;
     background: #1c1d24;
     padding: 2px 6px;
     color: #fff;
   }
   
-  .services .serv-content .card .skills .skills-bar .skills-bar-in span:after {
+  #row .skills .skills-bar .skills-bar-in span:after {
     content: "";
     position: absolute;
     bottom: -8px;
     right: 0;
     border-left: 7px solid transparent;
-    border-top: 70px solid #1c1d24;
-    right: 80px;
+    border-top: 8px solid #1c1d24;
   }
   
-  .services .serv-content .card .skills:not(:first-child) {
+  #row .skills:not(:first-child) {
     margin-top: 25px;
   }
   
-  .services .serv-content .card.skills .skills-bar .skills-bar-in {
+  .aducation-box_them-bg .skills .skills-bar .skills-bar-in {
     padding-top: 10px;
-    padding-bottom: px;
+    padding-bottom: 10px;
   }
   
   .skills-bar-in {
     height: 5px;
   }
-  
-
 /* portfolio */
 .protfolio{
     background-color: #140404;
