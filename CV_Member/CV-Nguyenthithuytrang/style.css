@@ -702,8 +702,52 @@ section .title::after{
     border: 3px 5px solid rgb(248, 152, 26);
     transition: all 0.3s ease;
   }
+  /* blog section styling */
+  .blog{
+    background-color: #180e0e;
+}
+.blog .title{
+    color: #f1f1f1;
+}
+.blog .text{
+    align-items: right;
+    width: 100%;
+    margin-bottom: 80px;
+
+
+}
+.blog-img img {
+    width: 450px;
+    height: 500px;
+  }
+  .blog-card{
+    display: flex;
+    flex-wrap: wrap;
   
   
+  }
+  .blog-content {
+      width:330px;
+      border-radius: 6px;
+    padding: 20px 30px ;
+    }
+.blog-img img{
+    width: 300px;
+    height: 250px;
+    
+}
+.blog.blog-card.blog-content.card-box{
+    background-color: #070501;
+    margin-top:-60px;
+    margin-left: 90px;
+}
+.card-box p{
+color:#f1f1f1 ;
+}
+.box1{
+    color: #878E99;
+}
+
 
 /* contact section styling */
 .contact .title::after{
