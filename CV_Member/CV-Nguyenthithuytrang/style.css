@@ -704,7 +704,13 @@ section .title::after{
   }
   /* blog section styling */
   .blog{
-    background-color: #180e0e;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    border: 1px solid #181e47;
+    padding: 40px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #1c1d24;
 }
 .blog .title{
     color: #f1f1f1;
@@ -712,51 +718,83 @@ section .title::after{
 .blog .text{
     align-items: right;
     width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 120px;
 
 
 }
-.blog-img img {
-    width: 450px;
-    height: 500px;
-  }
   .blog-card{
     display: flex;
     flex-wrap: wrap;
+    margin-left: 80px;
   
   
   }
+  .card-box{
+    background-color: #111;
+    width: 210px;
+    font-size: 15px;
+    margin-left: -256px;
+    margin-top:150px;
+}
+.card-box:hover{
+    color: #ff9900;
+}
   .blog-content {
       width:330px;
       border-radius: 6px;
-    padding: 20px 30px ;
+       padding: 20px ;
+       padding: 9px;
+       font-family: 16px;
+       display: flex;
+       cursor: pointer;
+     
+   
     }
 .blog-img img{
-    width: 300px;
-    height: 250px;
-    
-}
-.blog.blog-card.blog-content.card-box{
-    background-color: #070501;
-    margin-top:-60px;
-    margin-left: 90px;
+    width:300px;
+
 }
 .card-box p{
 color:#f1f1f1 ;
+font-style: normal;
+font-size: 15px;
+
 }
 .box1{
     color: #878E99;
+    font-size: 13px;
+
 }
+.card-box a{
+    color:#f1f1f1 ;
+    font-style: normal;
+    font-size: 15px;
+    
+    }
+    .box1:hover{
+        color: coral;
+            
+            }
+    .card-box p:hover{
+        color: coral;
+            
+            }
+ .card-box a:hover{
+    color: coral;
+        
+        }
+
 
 
 /* contact section styling */
 .contact .title::after{
     content: "get in touch";
 }
+.contact{
+    background-color: #1c1d24;
+}
 .contact .contact-content .column{
     width: calc(50% - 100px);
-    background-color: #140404;
-    color:#f1f1f1
 }
 .contact .contact-content .text{
     font-size: 20px;
