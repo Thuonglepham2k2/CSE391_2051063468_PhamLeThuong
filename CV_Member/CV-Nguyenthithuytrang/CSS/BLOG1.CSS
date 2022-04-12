@@ -34,3 +34,18 @@ html{
   .body label{
       color: darkorange;
   }
+  #p{
+      display: block;
+      padding-left: 30px;
+  }
+  .footer{
+      width: 80%;
+      background: rgb(230, 174, 22);
+    padding-left: 30px;
+    margin-left: 40px;
+  }
+  .footer span{
+      color: rgb(24, 4, 4);
+      font-style: unset;
+  }
+  
