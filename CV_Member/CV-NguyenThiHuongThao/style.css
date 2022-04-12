@@ -1,0 +1,489 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* all similar content styling codes */
+section {
+  padding: 100px 0;
+}
+
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+.services {
+  font-family: 'Poppins', sans-serif;
+}
+
+.services .serv-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+section .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+
+section .title::after {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  font-size: 20px;
+  color: crimson;
+  padding: 0 5px;
+  background: #dc965a;
+  transform: translateX(-50%);
+}
+
+
+/* services section styling */
+.services {
+  color: #fff;
+  background: #111;
+}
+
+.services .title::before {
+  background: #dc965a;
+}
+
+.services .title::after {
+  background: #111;
+}
+
+.services .serv-content .card {
+  width: calc(33% - 20px);
+
+  background: #222;
+  text-align: center;
+  border-radius: 6px;
+  padding: 80px 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 24px;
+  text-align: left;
+}
+
+.services .serv-content .card:hover {
+  background: crimson;
+}
+
+.services .serv-content .card .box {
+  transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover .box {
+  transform: scale(1.05);
+}
+
+.services .serv-content .card i {
+  font-size: 50px;
+  color: crimson;
+  transition: color 0.3s ease;
+}
+
+.services .serv-content .card:hover i {
+  color: #fff;
+}
+
+.section-title p {
+  text-align: left;
+  font-size: 17px;
+
+
+}
+
+.section-text p {
+  margin: 0;
+  padding-top: 0px;
+
+}
+
+.box p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+
+  text-align: left;
+  line-height: 1.7;
+}
+
+.box h6,
+h5 {
+  text-align: left;
+  margin-top: 5px;
+
+}
+
+.box h5 {
+  font-size: 1rem;
+}
+
+.box h6 {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 690px) {
+
+  .services .serv-content .card {
+    width: 100%;
+  }
+}
+
+/* row */
+#row {
+  font-family: 'Poppins', sans-serif;
+
+  text-align: center;
+  border: 1px solid #1c1d24;
+  padding: 80px 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #1c1d24;
+
+
+}
+
+#row .sm-title {
+  width: 25px;
+  height: 3px;
+  background-color: #dc965a;
+  margin: 0px;
+}
+
+#row {
+  display: flex;
+  justify-content: center;
+}
+
+#row .col-lg-4_my-3 {
+
+  text-align: left;
+
+  padding: 50px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+
+}
+
+#row .col-lg-4_my-3 h4 {
+  font-size: 27px;
+
+}
+
+#row .col-lg-4_my-3 .aducation-box_them-bg {
+  width: 350px;
+  height: 423.2px;
+  background-color: #5e6472;
+  margin: 30px 0;
+  color: #fff;
+  padding: 0 20px;
+
+}
+
+#row span {
+  font-size: 14px;
+  padding: 2px 15px;
+  line-height: 12px;
+  background-color: black;
+
+}
+
+#row ul,
+li {
+  list-style: none;
+}
+
+#row ul {
+  padding: 20px 0;
+  border-bottom: dotted 1px white;
+}
+
+#row h5 {
+  padding: 10px 0px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+#row h6 {
+  padding: 10px 0px;
+  font-size: 18px;
+  line-height: 5px;
+}
+
+#row p {
+  font-size: 16px;
+  line-height: 27px;
+}
+
+/* skills */
+#row .skills {
+  padding-top: 10px;
+}
+
+#row.skills h6 {
+  font-size: 1.2rem;
+  margin: 0 0 8px;
+  color: #1c1d24;
+  line-height: 28px;
+}
+
+#row .skills .skills-bar {
+  position: relative;
+  background: #1c1d24;
+}
+
+#row .skills .skills-bar .skills-bar-in {
+  width: 80px;
+  height: 10px;
+  position: relative;
+  transition: all 0.55s ease;
+}
+
+#row .skills .skills-bar .skills-bar-in span {
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+  background: #1c1d24;
+  padding: 2px 6px;
+  color: #fff;
+}
+
+#row .skills .skills-bar .skills-bar-in span:after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  right: 0;
+  border-left: 7px solid transparent;
+  border-top: 8px solid #1c1d24;
+}
+
+#row .skills:not(:first-child) {
+  margin-top: 25px;
+}
+
+.aducation-box_them-bg .skills .skills-bar .skills-bar-in {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.skills-bar-in {
+  height: 5px;
+}
+
+/* portfolio */
+#work {
+  font-family: 'Poppins', sans-serif;
+
+  text-align: center;
+  border: 1px solid #1c1d24;
+  padding: 80px 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #878e99;
+
+}
+
+.a {
+  display: flex;
+  justify-content: left;
+  padding-left: 60px;
+
+}
+
+#work .col-lg-7 {
+  margin-top: 100px;
+}
+
+.portfolio-menu ul {
+  display: inline-flex;
+  list-style: none;
+}
+
+.portfolio-menu ul li {
+  font-size: 1.6rem;
+  margin: 0 15px;
+  padding: 5px 0;
+  color: #1c1d24;
+  position: relative;
+
+}
+
+.col-sm-6 {
+  width: 385px;
+  height: 600px;
+
+  text-align: center;
+  transition: all 0.3s ease;
+  margin-top: 24px;
+  text-align: left;
+}
+
+.col-lg-7 {
+  margin-top: 100px;
+}
+
+.col-lg-7 h3 {
+  font-size: 45px;
+  color: #1c1d24;
+  font-weight: 800;
+  position: relative;
+  margin: 0 0 15px;
+  padding: 0 0 15px;
+}
+
+.titles::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 50px;
+  height: 3px;
+  background: #dc965a;
+  transform: translateX(-50%);
+}
+
+.portfolio-menu {
+  margin-top: 50px;
+
+}
+
+.portfolio-img {
+  position: relative;
+
+  transition: all 0.3s ease;
+
+  padding: 0 20px;
+  margin: 0px 19px;
+  background-color: #111;
+  /* border: 1px solid  rgb(34, 34, 34); */
+}
+
+.portfolio-img img {
+  width: 450px;
+  height: 500px;
+  padding: 20px 10px;
+}
+
+.a:hover h4 {
+  color: #dc965a;
+
+}
+
+.gallery-link:hover img {
+  background-color: white;
+  transform: scale(0.5, 0.5);
+}
+
+#teams {
+  font-family: 'Poppins', sans-serif;
+
+  text-align: center;
+  border: 1px solid #1c1d24;
+  padding: 70px 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #1c1d24;
+
+}
+
+.carousel {
+  display: flex;
+  justify-content: left;
+  padding-left: 35px;
+  transition: all 0.3s ease;
+
+}
+
+.teams .carousel .cards {
+  background: white;
+  border-radius: 6px;
+  margin: 5px 20px;
+  width: 360px;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.teams .carousel .cards:hover {
+  background: crimson;
+}
+
+.teams .carousel .cards:hover .boxs {
+  transform: scale(1.05);
+}
+
+.teams .carousel .cards .texts {
+  font-size: 20px;
+  font-weight: 20;
+  margin: 10px 0 7px 0;
+}
+
+.teams .carousel .cards img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid crimson;
+  transition: all 0.3s ease;
+}
+
+.teams .carousel .cards:hover img {
+  border-color: #fff;
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.owl-dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  outline: none !important;
+  border-radius: 50%;
+  border: 2px solid #ff9900 !important;
+  transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+  width: 35px;
+  border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+  background: #ff9900 !important;
+}
