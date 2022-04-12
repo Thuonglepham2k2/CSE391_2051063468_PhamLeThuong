@@ -69,3 +69,73 @@ a {
     text-decoration: none;
     background-color: transparent;
 }
+.Login-page{
+    display: none;
+}
+
+.login-page{
+    height: 100%;
+}
+
+.formRegister{
+    margin-top: 10px;
+	font-family: 'Nunito', sans-serif;
+	
+	display: table-cell;
+	vertical-align: middle;
+    align-items: center;
+	position: relative;
+	z-index:1;
+}
+h2{
+    margin-bottom: 3.5rem;
+   font-weight: 700;
+	font-size: 40px;
+    letter-spacing: 7px;    
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.formRegister .form-row {
+    width: 30%;
+    margin-left: 35%;
+    align-items: center;
+    display: block;
+}
+
+.formRegister .form-detail .form-row-btn {
+	text-align: center;
+}
+.formRegister .form-detail .input-text {
+	margin-bottom: 20px;
+}
+.formRegister .form-detail input {
+    align-items: center;
+	width: 60%;
+    padding: 18px 18px 18px 18px;
+    border: 2px solid transparent;
+    border-bottom: 2px solid #e5e5e5;
+    appearance: unset;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 3px;
+    color: #333;
+}
+.formRegister .form-detail .register:hover {
+	background: #e37b27;
+}
+
+.formRegister .form-detail .register {
+	background: greenyellow;
+    text-align: center;
+	border-radius: 6px;
+	width: 150px;
+	border: none;
+	margin: 11px 0 50px 0px;
+	font-family: 'Nunito', sans-serif;
+	color: white;
+	font-weight: 700;
+	font-size: 18px;
+    padding: 5px;
+}
