@@ -2,96 +2,378 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Portfolio Website</title>
+    <title>React Personal Portfolio Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="style.css" class="">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 </head>
 <body>
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="na_logo" style = 'color: red;font-size: 30px; font-weight: 60;'>Le Thuong</a>
-            <div class="nav_menu" id="nav-menu">
-                <ul class="nav_list grid">
-                    <li class="nav_item">
-                        <a href="#home" class="nav_link active-link">Home</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#about" class="nav_link">About
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#services" class="nav_link">
-                            Services
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#portfolio" class="nav_link">Portfolio
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#blog" class="nav_link">Blog
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#contact" class="nav_link">Contact
-                        </a>
-                    </li>
-                </ul>
-                <i class="uil uil-multiply nav_close" id="nav-close"></i>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">CV-<span>Seven.</span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn light">HOME</a></li>
+                <li><a href="#about" class="menu-btn">ABOUT US</a></li>
+                <li><a href="#services" class="menu-btn">SERVICES</a></li>
+                <li><a href="#skills" class="menu-btn">PORTFOLIO</a></li>
+                <li><a href="#teams" class="menu-btn">BLOG</a></li>
+                <li><a href="#contact" class="menu-btn">CONTACT</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
             </div>
-            <div class="nav_btns">
-                <div class="nav_toggle" id="nav-toggle">
-                    <i class="uil uil-bars"></i>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <main class="main">
-        <section class="home section" id="home">
-        <!-- <img src="img/Iron man.jpg" alt="" class="logo"> -->
-        <div class="home_container container grid">
-        <div class="home_content grid">
-        <!-- <div class="home_background">
-            <img src="img/Iron man.jpg" alt="" class="logo">
-        </div> -->
-        <div class="home_data">
-            <h1 class="home-title">Hi,</h1>
-            <h1 class="home-title">I'm <span>Pham Le Thuong</span></h1>
-            <h1 class="home-title">Fronted Developer</h1>
-            <a href="#see" class="button button--flex">
-                    See Who I'm
-            </a>
         </div>
+    </nav>
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Pham Le Thuong</div>
+                <div class="text-3">And I'm a <span class="text">Developer</span></div>
+                <a href="#about">See Who I'm</a>
+            </div>        
         <div class="home_scroll">
             <a href="#about" class="home_scroll-button button--flex">
                 <span class="home_scroll-name">Scroll</span>
             </a>
         </div>
-                <div class="home_social">
-                    <a href="https://www.facebook.com/thuonglepham2k2" target="_blank" class="home_social-icon">
-                        <i class="uil uil-facebook"></i>
-                    </a>
-                    <a href="https://twitter.com/?lang=vi" target="_blank" class="home_social-icon">
-                        <i class="uil uil-twitter"></i>
-                    </a>
-                    <a href="https://www.instagram.com/plthuong012210/" target="_blank" class="home_social-icon">
-                        <i class="uil uil-instagram-alt"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/" target="_blank" class="home_social-icon">
-                        <i class="uil uil-linkedin-alt"></i>
-                    </a>
-                    <a href="https://github.com/Thuonglepham2k2" target="_blank" class="home_social-icon">
-                        <i class="uil uil-github"></i>
-                    </a>
+        <div class="home_social">
+            <a href="https://www.facebook.com/thuonglepham2k2" target="_blank" class="home_social-icon">
+                <i class="uil uil-facebook"></i>
+            </a>
+            <a href="https://twitter.com/?lang=vi" target="_blank" class="home_social-icon">
+                <i class="uil uil-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/plthuong012210/" target="_blank" class="home_social-icon">
+                <i class="uil uil-instagram-alt"></i>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" class="home_social-icon">
+                <i class="uil uil-linkedin-alt"></i>
+            </a>
+            <a href="https://github.com/Thuonglepham2k2" target="_blank" class="home_social-icon">
+                <i class="uil uil-github"></i>
+            </a>
+        </div>
+    </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about" >
+        <div class="max-width">
+            <h2 class="title" style="color: aliceblue">About me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="img/profile1.png" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">I'm Pham Le Thuong and I'm a <span class="text">Developer</span></div>
+                    <p style="color: rgb(135, 142, 153)">I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores. My passion is to design digital user experiences through the bold interface and meaningful interactions. Check out my Portfolio.</p>
+                    <div class="right1">
+                        <div class="row">
+                          <div class="col1">
+                            <div class="text1">Birthday:</div>
+                          </div>
+                          <div class="col">
+                            <div class="text2">21/12/2002</div>
+                          </div>
+                          <div class="col1">
+                            <div class="text1">Age:</div>
+                          </div>
+                          <div class="col">
+                            <div class="text2">20 yr</div>
+                          </div>
+                          <div class="col1">
+                            <div class="text1">Residence:</div>
+                          </div>
+                          <div class="col">
+                            <div class="text2">Viet Nam</div>
+                          </div>
+                          <div class="col1">
+                            <div class="text1">Address:</div>
+                          </div>
+                          <div class="col">
+                            <div class="text2">Nam Dinh, Viet Nam</div>
+                          </div>
+                        </div>
+                          <div class="row">
+                          <div class="col1">
+                            <div class="text1">E-mail:</div>
+                          </div>
+                          <div class="col">
+                            <div class="text2">phlethuong21202@gmail.com</div>
+                          </div>
+                          <div class="col1">
+                            <div class="text1">Phone:</div>
+                          </div>
+                          <div class="col">
+                            <div class="text2">0833560332</div>
+                          </div>
+                          <div class="col1">
+                            <div class="text1">Facebook:</div>
+                          </div>
+                          <div class="col">
+                            <div class="text2">thuonglepham2k2</div>
+                          </div>
+                          <div class="col1">
+                            <div class="text1">Freelance:</div>
+                          </div>
+                          <div class="col">
+                            <div class="text2">Available</div>
+                          </div>
+                        </div>
+                    </div>
+                    <a href="img/profile.png" download="">Download CV</a>
                 </div>
             </div>
         </div>
     </section>
-    </main>
+    <!-- services section start -->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">My services</h2>
+            <p class="text" style="text-align:center; padding-bottom:20px">I design and develop services for customers of all sizes,
+                specializing in creating <br>stylish, modern
+                websites, web services and online stores.</p>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="uil uil-ruler"></i>
+                        <h6>
+                            01.RESPONSIVE LAYOUT
+                        </h6>
+                        <h5>Responsive layout design meeting clients needs.</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="uil uil-image-v"></i>
+                        <h6>
+                            02. DEVELOPMENT
+                        </h6>
+                        <h5>Development gorgeous graphic design meeting clients needs.</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="uil uil-web-grid-alt"></i>
+                        <h6>
+                            03. GRAPHIC
+                        </h6>
+                        <h5>Graphic gorgeous design meeting clients needs.</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                    <div class="card">
+                        <div class="box">
+                            <i class="uil uil-brush-alt"></i>
+                            <h6>
+                                04. WEB DESIGN
+                            </h6>
+                            <h5>Web Design gorgeous graphic design meeting clients needs.</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <i class="uil uil-camera"></i>
+                            <h6>
+                                05. MOTION GRAPHY
+                            </h6>
+                            <h5>Responsive layout design meeting clients needs.</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <i class="uil uil-shutter-alt"></i>
+                            <h6>
+                                06. PHOTOGRAPHY
+                            </h6>
+                            <h5>Photography design meeting clients needs.</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills section start -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">My skills</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">My creative skills & experiences.</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ratione error est recusandae consequatur, iusto illum deleniti quidem impedit, quos quaerat quis minima sequi. Cupiditate recusandae laudantium esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod.</p>
+                    <a href="#">Read more</a>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>CSS</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>JavaScript</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line js"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>PHP</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="line php"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>MySQL</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line mysql"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- teams section start -->
+    <section class="teams" id="teams">
+        <div class="max-width">
+            <h2 class="title">My teams</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="images/profile-1.jpeg" alt="">
+                        <div class="text">Someone name</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/profile-2.jpeg" alt="">
+                        <div class="text">Someone name</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/profile-3.jpeg" alt="">
+                        <div class="text">Someone name</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/profile-4.jpeg" alt="">
+                        <div class="text">Someone name</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/profile-5.jpeg" alt="">
+                        <div class="text">Someone name</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Prakash Shahi</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Surkhet, Nepal</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">abc@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer section start -->
+    <footer>
+        <span class="far fa-copyright"></span> 2022 copyright ib-themes all right reserved.</span>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
-<script src="script.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </html>

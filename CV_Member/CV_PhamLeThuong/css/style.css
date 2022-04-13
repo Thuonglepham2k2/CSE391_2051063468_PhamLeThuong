@@ -166,7 +166,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("img/Iron\ man.jpg") no-repeat center;
+    background: url("../img/Iron\ man.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -217,29 +217,84 @@ section .title::after{
     display: inline;
 
 }
-.home_scroll-button{
+/* .home_scroll-button{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: .2rem;
     transition: .3s;
- 
+
 }
 .home_scroll-button:hover{
     transform: translateY(.250px);
     bottom: 0; 
+} */
+.home_scroll{
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    z-index: 5;
 }
-.home_scroll-name{
+.home_scroll a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: .2rem;
+    transition: .3s;
+}
+.home_scroll a:hover {
+    color: #dc965a;
+    letter-spacing: .3rem;
+}
+/* .home_scroll-name{
     display: inline;
     text-transform: uppercase;
     cursor: pointer;
     font-family: 'Nunito','monospac';
     position: static;
     box-sizing: border-box;
+} */
+.home_social{
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
+    z-index: 5;
+}
+.home_social a{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background: #fff;
+    border-radius: 50%;
+    font-size: 2rem;
+    line-height: 35px;
+    color: #1c1d24;
+    margin-right: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s ease-in-out;
+    text-decoration: none;
+}
+.home_social a:hover{
+    background: #dc965a;
+    color: #fff;
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 
 /* about section styling */
 .about {
     background-attachment: fixed;
+    background-color:#1C1D24;
 }
 .about .title::after{
     content: "who i am";
+    background-color: #1C1D24;
 }
 .about .about-content .left{
     width: 45%;
@@ -287,10 +342,12 @@ section .title::after{
     font-size: 15px;
     font-weight: 600;
     margin-bottom: 10px;
+    color: white
 }
 .about .about-content .right1 .text2{
     text-align: left;
     padding-bottom: 10px;
+    color: rgb(135, 142, 153)
 }
 
 .about .about-content .right p{
@@ -313,6 +370,9 @@ section .title::after{
     color: #fff;
     background: #878E99;
 }
+.column .text{
+    color: white
+}
 
 /* services section styling */
 .services, .teams{
@@ -329,13 +389,14 @@ section .title::after{
     content: "what i provide";
 }
 .services .serv-content .card{
-    width: calc(33% - 20px);
+    width: calc(33% - 30px);
     background: #222;
-    text-align: center;
-    border-radius: 6px;
-    padding: 50px 25px;
+    text-align: left;
+    padding: 40px 30px 40px 30px;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-top: 24px;
+    font-size: large ;
 }
 .services .serv-content .card:hover{
     background: #ff9900;
@@ -355,11 +416,40 @@ section .title::after{
     color: #fff;
 }
 .services .serv-content .card .text{
-    font-size: 25px;
+    font-size: 100px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-
+.box p {
+        font-family: 'Nunito', 'monospac';
+        font-size: 16px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 27.2px;
+        text-decoration: none solid #878E99;
+        text-align: start;
+        text-indent: 0px;
+        text-transform: none;
+        vertical-align: baseline;
+        white-space: normal;
+        word-spacing: 0px;
+        color:#878E99 ;
+        margin-top: 10px;
+  }
+.box h6,h5 {
+  text-align: left;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.box h6{
+    color: #808080;
+    font-size: 14px;
+}
+.box h5 {
+  font-size: 20px;
+}
 /* skills section styling */
 
 .skills .title::after{
