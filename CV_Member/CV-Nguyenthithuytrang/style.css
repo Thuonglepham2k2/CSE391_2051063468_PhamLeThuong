@@ -661,7 +661,6 @@ section .title::after{
     font-weight: bold;
     font-family: 'Poppins',sans-serif;
     border: 0;
-    background-color: blue;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -706,7 +705,7 @@ section .title::after{
   .blog{
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    border: 1px solid #181e47;
+    border: 1px solid #1c1d24;
     padding: 40px 20px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -801,7 +800,7 @@ font-size: 15px;
     font-weight: 600;
     margin-bottom: 30px;
     color: #f1f1f1;
-    background: rgb(8, 7, 5);
+    
 }
 .contact .contact-content .left p{
     text-align: justify;
