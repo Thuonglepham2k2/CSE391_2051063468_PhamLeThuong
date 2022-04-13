@@ -45,9 +45,6 @@ function Login() {
     
 }
     
-    
-  
-
 function check_user(username, password, users) {
     for (i in users) {
         var user = users[i];

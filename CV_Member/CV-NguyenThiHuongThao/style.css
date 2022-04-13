@@ -70,7 +70,7 @@ section .title::after {
 /* services section styling */
 .services {
   color: #fff;
-  background: #111;
+  background: #1c1d24;
 }
 
 .services .title::before {
@@ -84,7 +84,7 @@ section .title::after {
 .services .serv-content .card {
   width: calc(33% - 20px);
 
-  background: #222;
+  background: #111;
   text-align: center;
   border-radius: 6px;
   padding: 80px 40px;
@@ -108,8 +108,9 @@ section .title::after {
 
 .services .serv-content .card i {
   font-size: 50px;
-  color: crimson;
+  color: #dc965a;
   transition: color 0.3s ease;
+ 
 }
 
 .services .serv-content .card:hover i {
@@ -136,21 +137,25 @@ section .title::after {
 
   text-align: left;
   line-height: 1.7;
+  font-style: italic;
 }
 
 .box h6,
 h5 {
   text-align: left;
   margin-top: 5px;
-
+  font-weight: normal;
 }
 
 .box h5 {
   font-size: 1rem;
+  
 }
 
 .box h6 {
   font-size: 0.8rem;
+ 
+  font-style: italic;
 }
 
 @media (max-width: 690px) {
@@ -169,7 +174,7 @@ h5 {
   padding: 80px 40px;
   cursor: pointer;
   transition: all 0.3s ease;
-  background-color: #1c1d24;
+  background-color: #111;
 
 
 }
@@ -205,7 +210,7 @@ h5 {
 #row .col-lg-4_my-3 .aducation-box_them-bg {
   width: 350px;
   height: 423.2px;
-  background-color: #5e6472;
+  background-color: #1c1d24;
   margin: 30px 0;
   color: #fff;
   padding: 0 20px;
@@ -311,7 +316,7 @@ li {
   padding: 80px 40px;
   cursor: pointer;
   transition: all 0.3s ease;
-  background-color: #878e99;
+  background-color: #1c1d24;
 
 }
 
@@ -332,7 +337,7 @@ li {
 }
 
 .portfolio-menu ul li {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   margin: 0 15px;
   padding: 5px 0;
   color: #1c1d24;
@@ -414,7 +419,7 @@ li {
   padding: 70px 40px;
   cursor: pointer;
   transition: all 0.3s ease;
-  background-color: #1c1d24;
+  background-color:#111;
 
 }
 
@@ -427,9 +432,9 @@ li {
 }
 
 .teams .carousel .cards {
-  background: white;
+  background: #dc965a;
   border-radius: 6px;
-  margin: 5px 20px;
+  margin: 5px 3px;
   width: 360px;
   text-align: center;
   overflow: hidden;
@@ -448,6 +453,7 @@ li {
   font-size: 20px;
   font-weight: 20;
   margin: 10px 0 7px 0;
+  color: #fff;
 }
 
 .teams .carousel .cards img {
