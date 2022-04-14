@@ -340,10 +340,11 @@ section .title::after{
     font-size: 10%;
 }
 .services p{
-    align-items: right;
+    align-items:center;
     margin-bottom: 45px;
     width: 60%;
-    margin-left: 250px;
+    margin-left: 25%;
+  
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -554,10 +555,27 @@ section .title::after{
 /* portfolio */
 .protfolio{
     background-color: #140404;
+    font-family: 'Nunito', 'monospac'; 
+    text-align: center;
+    border: 1px solid #1c1d24;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.protfolio .title{
+    color: #f1f1f1;
+}
+.protfolio.title::before{
+    background: #fff;
+    
+}
+.protfolio .title::after{
+    content: "what i write";
+    background-color: #1C1D24;
 }
 .menu1 li{
     list-style: none;
     display: inline-block;
+   
 }
 .protfolio h2{
 
@@ -573,10 +591,11 @@ section .title::after{
     display: block;
     color: hsl(140, 18%, 97%);
     font-size: 18px;
-    font-weight:100px;
-    margin-right: 25px;
+    margin-right: 5px;
     transition: color 0.3s ease;
-    margin-top: 10px;
+    margin-top: 20px;
+    align-items: center;
+    
     
 
 }
@@ -749,21 +768,33 @@ section .title::after{
 }
   /* blog section styling */
   .blog{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nunito', 'monospac';
     text-align: center;
-    border: 1px solid #1c1d24;
+    border: 1px solid #111;
     padding: 40px 20px;
     cursor: pointer;
     transition: all 0.3s ease;
     background-color: #1c1d24;
 }
+.blog .title::before{
+    background: #fff;
+    
+}
+.blog .title::after{
+    content: "what i write";
+    background-color: #1C1D24;
+}
 .blog .title{
     color: #f1f1f1;
 }
 .blog .text{
-    align-items: right;
-    width: 100%;
     margin-bottom: 120px;
+    color:#f1f1f1;
+    font-family: 'Nunito', 'monospac'; 
+    text-align: center;
+    border: 1px solid #1c1d24;
+    cursor: pointer;
+    transition: all 0.3s ease;
 
 
 }
