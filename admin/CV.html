@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Admin page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">CV-<span>Seven</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link"  href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="index.html">Users</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="teacher-admin.html">Teacher</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active"  href="CV.html">CV</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+<div class="container">
+    <h1 class="text-center">CV Management</h1>
+    <form onsubmit="create_user()" name="userForm">
+        <div class="form-group">
+            <input class="form-control" type="text" name="id" autocomplete="off" value="ID" disabled>
+            <input class="form-control" type="text" name="fullName" placeholder="Full Name" autocomplete="off">
+            <input class="form-control" type="position" name="position" placeholder="Date" autocomplete="off">
+            <input class="form-control" type="text" name="dateOfBorned" placeholder="Sex" autocomplete="off">
+            <input class="form-control" type="text" name="email" placeholder="Email" autocomplete="off">
+            <input class="form-control" type="text" name="phone" placeholder="Experience" autocomplete="off">
+            <input class="form-control" type="text" name="phone" placeholder="Project" autocomplete="off">
+            <input class="form-control" type="text" name="address" placeholder="CV" autocomplete="off">
+        <div class="d-flex justify-content-center">
+            <button type="submit" id="create" class="btn btn-success">Add</button>
+            <button type="button" id="read" class="btn btn-info" onclick="read_data()">Read</button>
+            <button id="update" class="btn btn-warning" onclick="update_user()" type="button">Update</button>
+            <button id="delete" type="button" class="btn btn-danger" onclick="delete_all()">Delete</button>
+        </div>
+        </div>
+    </form>
+    <!---Table--->
+    <table class="table">
+        <thead class="info" style="background-color: aliceblue; padding-top:10px">
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Sex</th>
+                <th>Email</th>
+                <th>Experience</th>
+                <th>Project</th>
+                <th>CV</th>
+            </tr>
+            </thead>
+            <tbody id="data">
+                <tr>
+                    <th>1</th>
+                    <th>Nguyen Thi Huong Thao</th>
+                    <th>23/10/2002</th>
+                    <th>Nữ</th>
+                    <th>thaonguyen.jimi@gmail.com</th>
+                    <th>1yr</th>
+                    <th></th>
+                    <th><a href="../CV_Member/CV-NguyenThiHuongThao/index.html">CV</a></th> 
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <th>Pham Le Thuong</th>
+                    <th>21/12/2002</th>
+                    <th>Nam</th>
+                    <th>667715koco@gmail.com</th>
+                    <th>1yr</th>
+                    <th></th>
+                    <th><a href="../CV_Member/CV_PhamLeThuong/index.html">CV</a></th> 
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <th>Nguyen Thi Thuy Trang</th>
+                    <th></th>
+                    <th>Nữ</th>
+                    <th></th>
+                    <th>1yr</th>
+                    <th></th>
+                    <th><a href="../CV_Member/CV-Nguyenthithuytrang/index.html">CV</a></th> 
+                </tr>
+            </tbody>
+    </table>
+    </div>
+    <script src="js/app.js"></script>
+    <script>
+        app.get('/', function(req, res){
+        res.sendFile(process.cwd() + '/views/index.html');
+      });</script>
+</body>
