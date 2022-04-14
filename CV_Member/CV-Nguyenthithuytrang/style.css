@@ -721,6 +721,7 @@ section .title::after{
 .teams .carousel .card .box p{
     padding-left: 20px;
     flex: 1 1;
+    color: #555;
 }
 .teams .carousel .card .card-image{
     width: 30%;
