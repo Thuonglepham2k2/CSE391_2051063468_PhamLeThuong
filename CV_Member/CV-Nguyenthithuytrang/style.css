@@ -812,6 +812,7 @@ section .title::after{
     font-size: 15px;
     margin-left: -256px;
     margin-top:150px;
+   
 }
 .card-box:hover{
     color: #ff9900;
@@ -846,6 +847,7 @@ font-size: 15px;
     color:#f1f1f1 ;
     font-style: normal;
     font-size: 15px;
+    color: blue;text-decoration: underline;
     
     }
     .box1:hover{
