@@ -14,17 +14,23 @@ body {
 
 .container-fluid {
     display: flex;
-    
+    width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 
 .container-fluid ul {
     display: inline-flex;
     list-style: none;
-    padding-left: 1400px;
+    
     
 }
-
+.nav-item .nav-link{
+  justify-content: right;
+}
 .container-fluid li {
     padding: 0 10px;
     font-size: 1.3rem !important;
@@ -49,9 +55,9 @@ body {
 	z-index:1;
 }
 .heading h1{
-	/* color: #ffffff; */
+
 	font-weight: 600;
-	font-size: 32px;
+	font-size: 25px;
     letter-spacing: 6px;
 	text-transform: uppercase;
 }
@@ -88,15 +94,6 @@ a {
 	position: relative;
 	z-index:1;
 }
-h2{
-    margin-bottom: 3.5rem;
-   font-weight: 700;
-	font-size: 40px;
-    letter-spacing: 7px;    
-    margin-top: 30px;
-    text-transform: uppercase;
-}
-
 .formRegister .form-row {
     width: 30%;
     margin-left: 35%;
@@ -139,4 +136,21 @@ h2{
 	font-weight: 700;
 	font-size: 18px;
     padding: 5px;
+    
 }
+
+
+@media (min-width: 1200px) {
+    .fixed-top {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 1030;
+    }
+    
+    }
+
+ 
+
+ 
