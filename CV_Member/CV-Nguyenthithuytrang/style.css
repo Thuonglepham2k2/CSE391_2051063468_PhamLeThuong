@@ -289,7 +289,6 @@ section .title::after{
 }
 .services .title::after::after{
     background: #111;
-    content:;
     font-size: 10%;
 }
 .services p{
@@ -661,10 +660,7 @@ section .title::after{
 
 
 }
-.img{ 
-    
-    
-}
+
 
   .teams .team-content .card:hover .box {
     transform: scale(1.05);
