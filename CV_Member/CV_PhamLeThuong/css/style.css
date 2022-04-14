@@ -265,12 +265,12 @@ section .title::after{
     z-index: 5;
 }
 .home_social a{
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     text-align: center;
     background: #fff;
     border-radius: 50%;
-    font-size: 2rem;
+    font-size: 16px;
     line-height: 35px;
     color: #1c1d24;
     margin-right: 8px;
@@ -291,6 +291,9 @@ section .title::after{
 .about {
     background-attachment: fixed;
     background-color:#1C1D24;
+}
+.about .title::before{
+    background: #fff;
 }
 .about .title::after{
     content: "who i am";
@@ -379,12 +382,10 @@ section .title::after{
     color:#fff;
     background: #111;
 }
-.services .title::before,
-.teams .title::before{
+.services .title::before{
     background: #fff;
 }
-.services .title::after,
-.teams .title::after{
+.services .title::after{
     background: #111;
     content: "what i provide";
 }
@@ -450,96 +451,295 @@ section .title::after{
 .box h5 {
   font-size: 20px;
 }
-/* skills section styling */
-
-.skills .title::after{
-    content: "what i know";
-}
-.skills .skills-content .column{
-    width: calc(50% - 30px);
-}
-.skills .skills-content .left .text{
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-.skills .skills-content .left p{
-    text-align: justify;
-}
-.skills .skills-content .left a{
-    display: inline-block;
-    background: #ff9900;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 16px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid #ff9900;
+/* PORTFOLIO */
+#row {
+    font-family: 'Nunito', 'monospac';  
+    text-align: center;
+    border: none solid #1c1d24;
+    padding: 0px 40px;
+    cursor: pointer;
     transition: all 0.3s ease;
-}
-.skills .skills-content .left a:hover{
-    color: #ff9900;
-    background: none;
-}
-.skills .skills-content .right .bars{
-    margin-bottom: 15px;
-}
-.skills .skills-content .right .info{
+    background-color: #878E99;
+    
+  }
+  
+  #row .sm-title {
+    width: 25px;
+    height: 3px;
+    background-color: #dc965a;
+    margin: 0px;
+  }
+  
+  #row {
     display: flex;
-    margin-bottom: 5px;
-    align-items: center;
-    justify-content: space-between;
-}
-.skills .skills-content .right span{
-    font-weight: 500;
+    justify-content: center;
+  }
+  
+  #row .col-lg-4_my-3 {
+  
+    text-align: left; 
+    padding: 50px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+  
+  }
+  
+  #row .col-lg-4_my-3 h4 {
+    font-size: 27px;
+    cursor:auto
+  }
+  
+  #row .col-lg-4_my-3 .aducation-box_them-bg {
+    width: 376px;
+    height: 425.2px;
+    background-color: #1c1d24;
+    margin: 30px 0;
+    color: #fff;
+    padding: 0 20px;
+    cursor: default;
+  }
+  
+  #row span {
+    font-size: 14px;
+    padding: 2px 15px;
+    line-height: 12px;
+    background-color: black;
+    border-radius: 30px;
+  }
+  
+  #row ul,
+  li {
+    list-style: none;
+  }
+  
+  #row ul {
+    padding: 20px 0;
+    border-top: 1px dashed white;
+  }
+  
+  #row h5 {
+    padding: 10px 0px;
     font-size: 18px;
-}
-.skills .skills-content .right .line{
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
+    line-height: 21px;
+  }
+  
+  #row h6 {
+    padding: 10px 0px;
+    font-size: 18px;
+    line-height: 5px;
+  }
+  
+  #row p {
+    font-size: 16px;
+    line-height: 27px;
+  }
+  
+  /* skills */
+  #row .skills {
+    padding-top: 10px;
+  }
+  
+  #row.skills h6 {
+    font-size: 1.2rem;
+    margin: 0 0 8px;
+    color: #1c1d24;
+    line-height: 28px;
+  }
+  
+  #row .skills .skills-bar {
     position: relative;
-}
-.skills .skills-content .right .line::before{
+    background: #1c1d24;
+  }
+  
+  #row .skills .skills-bar .skills-bar-in {
+    width: 80px;
+    height: 10px;
+    position: relative;
+    transition: all 0.55s ease;
+  }
+  
+  #row .skills .skills-bar .skills-bar-in span {
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    background: #1c1d24;
+    padding: 2px 6px;
+    color: #fff;
+  }
+  
+  #row .skills .skills-bar .skills-bar-in span:after {
     content: "";
     position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: #ff9900;
-}
-.skills-content .right .html::before{
+    bottom: -8px;
+    right: 0;
+    border-left: 7px solid transparent;
+    border-top: 8px solid #1c1d24;
+  }
+  
+  #row .skills:not(:first-child) {
+    margin-top: 25px;
+  }
+  
+  .aducation-box_them-bg .skills .skills-bar .skills-bar-in {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .skills-bar-in {
+    height: 5px;
+  }
+
+/* portfolio */
+#work {
+    font-family: 'Nunito', 'monospac'; 
+    text-align: center;
+    border: 1px solid #1c1d24;
+    padding: 80px 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #1c1d24;
+  
+  }
+  
+  .a {
+    display: flex;
+    justify-content: left;
+    padding-left: 60px;
+  
+  }
+  
+  #work .col-lg-7 {
+    margin-top: 100px;
+  }
+  
+  .portfolio-menu ul {
+    display: inline-flex;
+    list-style: none;
+  }
+  
+  .portfolio-menu ul li {
+    font-size: 1.2rem;
+    margin: 0 15px;
+    padding: 5px 0;
+    color: #1c1d24;
+    position: relative;
+  
+  }
+  
+  .col-sm-6 {
+    width: 33%;
+    height: 530px;
+  
+    text-align: center;
+    transition: all 0.3s ease;
+    margin-top: 24px;
+    text-align: left;
+  }
+  
+  .col-lg-7 {
+    margin-top: 100px;
+  }
+  
+  .col-lg-7 h3 {
+    font-size: 45px;
+    color: #1c1d24;
+    font-weight: 800;
+    position: relative;
+    margin: 0 0 15px;
+    padding: 0 0 15px;
+  }
+  
+  .titles::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 50px;
+    height: 3px;
+    background: #dc965a;
+    transform: translateX(-50%);
+  }
+  
+  .portfolio-menu {
+    margin-top: 50px;
+  
+  }
+  
+  .portfolio-img {
+    position: relative;
+  
+    transition: all 0.3s ease;
+  
+    padding: 0 20px;
+    margin: 0px 19px;
+    background-color: #111;
+    /* border: 1px solid  rgb(34, 34, 34); */
+  }
+  
+  .portfolio-img img {
     width: 90%;
+    height: 500px;
+    padding: 20px 10px;
+  }
+  
+  .a:hover h4 {
+    color: #dc965a;
+  
+  }
+  .gallery-link img {
+    max-width: 100%;
+    display: block;
+    transition: .6s;
 }
-.skills-content .right .css::before{
-    width: 60%;
+  .gallery-link:hover img {
+    background-color:#dc965a ;
+    transform: scale(0.5, 0.5);
+  }
+  .portfolio-icon {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    transition: all .55s ease;
+    /* opacity: 0; */
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 55px;
+    background: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    color: #dc965a;
+    text-decoration: none;
+    font-size: 2.6rem;
 }
-.skills-content .right .js::before{
-    width: 80%;
-}
-.skills-content .right .php::before{
-    width: 50%;
-}
-.skills-content .right .mysql::before{
-    width: 70%;
+
+.portfolio-icon:hover {
+    background: rgba(255, 255, 255, 1);
 }
 
 /* teams section styling */
-.teams .title::after{
-    content: "who with me";
+.teams {
+    padding: 100px 0;
+    position: relative;
+}
+.teams .carousel{
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 0 30px;
+    width: 100%;
 }
 .teams .carousel .card{
-    background: #222;
+    background: #111;
     border-radius: 6px;
     padding: 25px 35px;
-    text-align: center;
+    text-align: left;
     overflow: hidden;
     transition: all 0.3s ease;
+    display: flex;
 }
-.teams .carousel .card:hover{
-    background: #ff9900;
-}
+
 .teams .carousel .card .box{
     display: flex;
     flex-direction: column;
@@ -547,24 +747,37 @@ section .title::after{
     justify-content: center;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover .box{
-    transform: scale(1.05);
-}
 .teams .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.teams .carousel .card img{
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid #ff9900;
-    transition: all 0.3s ease;
+.teams .carousel .card .box p{
+    padding-left: 20px;
+    flex: 1 1;
 }
-.teams .carousel .card:hover img{
-    border-color: #fff;
+.teams .carousel .card .card-image{
+    width: 30%;
+    padding: 0 15px 15px;
+    position: relative;
+}
+.teams .carousel .card img{
+    max-width: 100%;
+}
+.rating-value {
+    color: #111;
+    display: inline-block;
+    vertical-align: middle;
+    background: #fff;
+    border-radius: 30px;
+    padding: 0 10px;
+    box-shadow: 1px 1px 1px 1px rgb(28 29 36 / 10%);
+    font-size: 0.9rem;
+}
+
+.rating-value i {
+    color: #ffc800;
+    margin-right: 3px;
 }
 .owl-dots{
     text-align: center;
@@ -587,21 +800,110 @@ section .title::after{
 .owl-dot:hover{
     background: #ff9900!important;
 }
+/* blog */
+.blog{
+    font-family: 'Nunito', 'monospac';
+    text-align: center;
+    border: 1px solid #111;
+    padding: 40px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #1c1d24;
+    /* display: flex; */
 
+}
+.blog .title::before{
+    background: #fff;
+    
+}
+.blog .title::after{
+    content: "what i write";
+    background-color: #1C1D24;
+}
+.blog .title{
+    color: #f1f1f1;
+    font-weight: 800;
+    font-size: 45px;
+}
+.blog .blog-content{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+.blog .blog-content .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    margin: 7px 10px;
+    text-align: left;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    width: 33%;
+}
+/* .blog .blog-content .card:hover{
+    background: #ff9900;
+} */
+.blog .blog-content .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+/* .blog .blog-content .card:hover .box{
+    transform: scale(1.05);
+} */
+.blog .blog-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    color:#fff
+}
+.blog .blog-content .card .text:hover{
+    color: #ff9900;
+}
+.blog .blog-content .card img{
+    width: 90%;
+    object-fit: cover;
+    border: none solid ;
+    transition: all 0.3s ease;
+}
+.blog .blog-content .card:hover img{
+    border-color: #fff;
+    transform: scale(1.05);
+}
+.blog .blog-content .card .btn{
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #878E99;
+}
+.blog .blog-content .card .btn:hover{
+    color: #dc965a;
+    text-decoration: underline;
+}
 /* contact section styling */
+.contact .title{
+    color: #f1f1f1;
+}
 .contact .title::after{
     content: "get in touch";
+    background-color: #111;
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
 .contact .contact-content .text{
-    font-size: 20px;
+    color: #fff;
+    font-size: 30px;
     font-weight: 600;
     margin-bottom: 10px;
 }
+
 .contact .contact-content .left p{
     text-align: justify;
+    color: #555;
+    font-size: 16px;
 }
 .contact .contact-content .left .icons{
     margin: 10px 0;
@@ -613,17 +915,25 @@ section .title::after{
 }
 .contact .contact-content .row .info{
     margin-left: 30px;
+    margin-top: 40px;
 }
 .contact .contact-content .row i{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
     font-size: 25px;
     color: #ff9900;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffe6b3;
+    margin-top: 40px;
 }
-.contact .contact-content .info .head{
-    font-weight: 500;
-}
+
 .contact .contact-content .info .sub-title{
-    color: #333;
+    color: #555;
 }
+
 .contact .right form .fields{
     display: flex;
 }
@@ -631,7 +941,7 @@ section .title::after{
 .contact .right form .fields .field{
     height: 45px;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 .contact .right form .textarea{
     height: 80px;
@@ -667,7 +977,7 @@ section .title::after{
 .right form .button-area button{
   color: #fff;
   display: block;
-  width: 160px!important;
+  width: 200px!important;
   height: 45px;
   outline: none;
   font-size: 18px;
@@ -685,19 +995,42 @@ section .title::after{
 }
 /* footer section styling */
 footer{
-    background: #111;
-    padding: 15px 23px;
+    background: #1C1D24;
+    padding: 0 12px;
     color: #fff;
-    text-align: center;
+    line-height: 25px;
+    display: block;
 }
-footer span a{
-    color: #ff9900;
+.footer-left {
+    text-align: left;
+    justify-content: flex-start;
+}
+.footer-left a {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 17px;
     text-decoration: none;
-}
-footer span a:hover{
-    text-decoration: underline;
+    background-color: transparent;
 }
 
+.footer-left a:hover {
+    color: #dc965a;
+}
+.footer-right span{
+    color: #fff;
+    text-decoration: none;
+}
+.footer-right span:hover{
+    color: #ff9900;
+}
+.footer-right {
+    text-align: right;
+}
+
+.footer-right p {
+    color: #fff;
+    font-size: 1.4rem;
+}
 
 /* responsive media query start */
 @media (max-width: 1104px) {
@@ -770,7 +1103,7 @@ footer span a:hover{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-    .skills .skills-content .column,
+
     .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
@@ -793,7 +1126,11 @@ footer span a:hover{
     .services .serv-content .card{
         width: 100%;
     }
+    .skills .row .col-lg-4_my-3{
+        width: 100%;
+    }
 }
+
 
 @media (max-width: 500px) {
     .home .home-content .text-2{
@@ -803,9 +1140,6 @@ footer span a:hover{
         font-size: 27px;
     }
     .about .about-content .right .text,
-    .skills .skills-content .left .text{
-        font-size: 19px;
-    }
     .contact .right form .fields{
         flex-direction: column;
     }

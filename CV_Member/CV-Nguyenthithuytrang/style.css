@@ -289,7 +289,6 @@ section .title::after{
 }
 .services .title::after::after{
     background: #111;
-    content:;
     font-size: 10%;
 }
 .services p{
@@ -623,7 +622,7 @@ section .title::after{
     font-family: 'Poppins', sans-serif;
     text-align: center;
     border: 1px solid #1c1d24;
-    padding: 70px 40px;
+    
     cursor: pointer;
     transition: all 0.3s ease;
     background-color: #1c1d24;
@@ -633,34 +632,27 @@ section .title::after{
   .team-content {
     display: flex;
     transition: all 0.3s ease;
-    flex-wrap: wrap;
+    
+   
   
   }
   
-  .teams .team-content .card {
-    background:#1c1d24;
-    border-radius: 8px;
-     margin-right: 100px;
-    width:490px;
-    text-align: center;
-    overflow: hidden;
-    transition: all 0.3s ease;
-  }
+ 
   .teams .team-content .card .box {
-    margin-left:80px;
-    width: 500px;
-    font-size: 15px;
+  
+     
+     height: 20%;
+    font-size: 10px;
     color:#878E99;
+    
   }
   .card{
     padding: 9px;
-
     display: block;
-    width: 100%;
-    font-family: 16px;
+    width: 100%; 
     font-weight: bold;
     font-family: 'Poppins',sans-serif;
-    border: 0;
+    padding-left: 5px;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -668,38 +660,48 @@ section .title::after{
 
 
 }
-.img{
-    width: 30px;
-    height: 30px;
-    flex-wrap: wrap;
-    margin-bottom: 120px;
-}
-.box{
-    display: block;
-    margin: 0 auto;
-    align-items: center;
-    
 
-}
 
-  
   .teams .team-content .card:hover .box {
     transform: scale(1.05);
   }
   
   .text {
     font-size: 15px;
-    font-weight: 20;
     color:#f1f1f1;
 
      
   }
   
   .teams .team-content .card img {
-    margin-right: 100px ;
-    width: 100px;
+    
+    width: 40%;
     border: 3px 5px solid rgb(248, 152, 26);
     transition: all 0.3s ease;
+  }
+  .owl-dots {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid #ff9900 !important;
+    transition: all 0.3s ease;
+  }
+  
+  .owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+  }
+  
+  .owl-dot.active,
+  .owl-dot:hover {
+    background: #ff9900 !important;
   }
   /* blog section styling */
   .blog{
