@@ -41,7 +41,6 @@ section{
 }
 .about .about-content,
 .services .serv-content,
-.skills .skills-content,
 .contact .contact-content{
   display: flex;
   flex-wrap: wrap;
@@ -897,6 +896,7 @@ li {
 
 .contact .title::after{
   content: "get in touch";
+  background-color: #111;
 }
 .contact .contact-content .column{
   width: calc(50% - 30px);

@@ -5,7 +5,7 @@
     font-family: sans-serif;
     text-decoration: none;
 
-} 
+}
 
 html,
 body {
@@ -15,85 +15,96 @@ body {
 .container-fluid {
     display: flex;
     width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
 }
 
 
 .container-fluid ul {
     display: inline-flex;
     list-style: none;
-    
-    
+    padding-left: 1000px;
+
 }
-.nav-item .nav-link{
-  justify-content: right;
+
+.nav-item .nav-link {
+    justify-content: right;
 }
+
 .container-fluid li {
     padding: 0 10px;
     font-size: 1.3rem !important;
 }
 
 
-.main-banner{
-	height: 100%;
-	position: relative;
+.main-banner {
+    height: 100%;
+    position: relative;
 }
 
-.main-banner{
-	display: table;
+.main-banner {
+    display: table;
     width: 100%;
-	text-align: center;
+    text-align: center;
 }
 
-.heading{
-	display: table-cell;
-	vertical-align: middle;
-	position: relative;
-	z-index:1;
+.heading {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
 }
-.heading h1{
 
-	font-weight: 600;
-	font-size: 25px;
+.heading h1 {
+
+    font-weight: 600;
+    font-size: 25px;
     letter-spacing: 6px;
-	text-transform: uppercase;
+    text-transform: uppercase;
 }
-.heading p{
-	font-size: 18px;
-	padding: 20px 0px;
+
+.heading p {
+    font-size: 18px;
+    padding: 20px 0px;
 }
-.heading button:hover{
+
+.heading button:hover {
     background-color: #e37b27;
 }
-.heading button{
+
+.heading button {
     background-color: rgb(34, 255, 0);
-}
-a {
     
+}
+
+a {
+
     text-decoration: none;
     background-color: transparent;
 }
-.Login-page{
+
+.Login-page {
     display: none;
 }
 
-.login-page{
+.login-page {
     height: 100%;
 }
 
-.formRegister{
+.formRegister {
     margin-top: 10px;
-	font-family: 'Nunito', sans-serif;
-	
-	display: table-cell;
-	vertical-align: middle;
+    font-family: 'Nunito', sans-serif;
+
+    display: table-cell;
+    vertical-align: middle;
     align-items: center;
-	position: relative;
-	z-index:1;
+    position: relative;
+    z-index: 1;
 }
+
 .formRegister .form-row {
     width: 30%;
     margin-left: 35%;
@@ -102,14 +113,16 @@ a {
 }
 
 .formRegister .form-detail .form-row-btn {
-	text-align: center;
+    text-align: center;
 }
+
 .formRegister .form-detail .input-text {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
+
 .formRegister .form-detail input {
     align-items: center;
-	width: 60%;
+    width: 60%;
     padding: 18px 18px 18px 18px;
     border: 2px solid transparent;
     border-bottom: 2px solid #e5e5e5;
@@ -120,37 +133,35 @@ a {
     border-radius: 3px;
     color: #333;
 }
+
 .formRegister .form-detail .register:hover {
-	background: #e37b27;
+    background: #e37b27;
 }
 
 .formRegister .form-detail .register {
-	background: greenyellow;
+    background: rgb(92, 143, 16);
     text-align: center;
-	border-radius: 6px;
-	width: 150px;
-	border: none;
-	margin: 11px 0 50px 0px;
-	font-family: 'Nunito', sans-serif;
-	color: white;
-	font-weight: 700;
-	font-size: 18px;
+    border-radius: 6px;
+    width: 150px;
+    border: none;
+    margin: 11px 0 50px 0px;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
     padding: 5px;
-    
+
 }
+
 
 
 @media (min-width: 1200px) {
     .fixed-top {
-      position: fixed;
-      top: 0;
-      right: 0;
-      left: 0;
-      z-index: 1030;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
     }
-    
-    }
+}
 
- 
-
- 
