@@ -459,7 +459,7 @@ section .title::after{
     padding: 0px 40px;
     cursor: pointer;
     transition: all 0.3s ease;
-    background-color: #878E99;
+    background-color: #555;
     
   }
   
@@ -610,7 +610,7 @@ section .title::after{
   }
   
   #work .col-lg-7 {
-    margin-top: 100px;
+    margin-top: 0px;
   }
   
   .portfolio-menu ul {
@@ -650,6 +650,9 @@ section .title::after{
     padding: 0 0 15px;
   }
   
+  .col-lg-7 p{
+      color:#555;
+  }
   .titles::before {
     content: "";
     position: absolute;
@@ -670,11 +673,11 @@ section .title::after{
     position: relative;
   
     transition: all 0.3s ease;
-  
+    text-decoration: none solid rgb(220, 150, 90);
     padding: 0 20px;
     margin: 0px 19px;
     background-color: #111;
-    /* border: 1px solid  rgb(34, 34, 34); */
+
   }
   
   .portfolio-img img {
@@ -682,19 +685,39 @@ section .title::after{
     height: 500px;
     padding: 20px 10px;
   }
-  
-  .a:hover h4 {
-    color: #dc965a;
-  
+  .a h4{
+      font-size: large;
+      padding-top: 10px;
   }
+  .a h4:hover {
+    color: #dc965a;
+  }
+  .a span{
+    color:#555;
+  }
+  .gallery-link {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    cursor: zoom-in!important;
+    color: #dc965a;
+    transition: .3s;
+    text-decoration: none;
+}
   .gallery-link img {
     max-width: 100%;
     display: block;
-    transition: .6s;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+	transition: all 0.6s ease 0s;
+    background-attachment: scroll;
+    background-repeat: repeat;
+    overflow: visible;
 }
   .gallery-link:hover img {
     background-color:#dc965a ;
-    transform: scale(0.5, 0.5);
+    /* transform: scale(0.5, 0.5); */
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    overflow: visible;
   }
   .portfolio-icon {
     position: absolute;
