@@ -19,6 +19,7 @@ body {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 20px;
 
 }
 
@@ -97,7 +98,6 @@ a {
 .formRegister {
     margin-top: 10px;
     font-family: 'Nunito', sans-serif;
-
     display: table-cell;
     vertical-align: middle;
     align-items: center;
@@ -106,7 +106,7 @@ a {
 }
 
 .formRegister .form-row {
-    width: 30%;
+    width: 40%;
     margin-left: 35%;
     align-items: center;
     display: block;
@@ -122,6 +122,19 @@ a {
 
 .formRegister .form-detail input {
     align-items: center;
+    width: 40%;
+    padding: 18px 18px 18px 18px;
+    border: 2px solid transparent;
+    border-bottom: 2px solid #e5e5e5;
+    appearance: unset;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 3px;
+    color: #333;
+}
+.formRegister .form-detail select{
+    align-items: center;
     width: 60%;
     padding: 18px 18px 18px 18px;
     border: 2px solid transparent;
@@ -133,13 +146,12 @@ a {
     border-radius: 3px;
     color: #333;
 }
-
 .formRegister .form-detail .register:hover {
     background: #e37b27;
 }
 
 .formRegister .form-detail .register {
-    background: rgb(92, 143, 16);
+    background: #111;
     text-align: center;
     border-radius: 6px;
     width: 150px;
@@ -164,4 +176,7 @@ a {
         z-index: 1030;
     }
 }
+
+
+
 
